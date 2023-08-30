@@ -32,7 +32,7 @@ const BlogIndex: React.FC = () => {
 			<main className={styles.main}>
 				<h2 className={styles.subtitle}>Read on my blog</h2>
 				<ul className={styles.post__list}>
-					{data?.map((e) => (
+					{data?.filter(Boolean).map((e) => (
 						<Card
 							key={e.id}
 							title={e.title}

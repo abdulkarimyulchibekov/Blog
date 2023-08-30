@@ -4,14 +4,14 @@ import styles from './style.module.css';
 
 export type ArticleItemType = {
 	subTitle: string;
-	children: React.ReactNode[];
+	children: React.ReactElement[];
 };
 
 export type ArticleType = {
 	title: string;
 	id: number;
 	description: string;
-	mainImage: React.ReactNode;
+	mainImage: React.ReactElement;
 	content: ArticleItemType[];
 };
 
