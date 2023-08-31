@@ -19,9 +19,10 @@ export type ArticleType = {
 export const data: ArticleType[] = [
 	// ------------------ First Article -------------------------
 	{
-		title: 'All About React.js',
+		title: 'History of React.js',
 		id: 1,
-		description: 'In this article I want to share my knowledge about React.js',
+		description:
+			'In this article I write about history, that even one guy can change everything, you need only spend some effort',
 		mainImage: (
 			<Image
 				src={'/images/Picture1.svg'}
