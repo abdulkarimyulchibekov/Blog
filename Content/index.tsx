@@ -106,9 +106,9 @@ export const data: ArticleType[] = [
 					<Image
 						key={2}
 						alt='image'
-						width={200}
+						width={500}
 						height={200}
-						src={'https://placehold.co/200x200'}
+						src={'/images/react-folder-structure.png'}
 					/>,
 					<p key={3}>it is very good</p>,
 				],
@@ -123,9 +123,9 @@ export const data: ArticleType[] = [
 					<Image
 						key={2}
 						alt='image'
-						width={200}
+						width={500}
 						height={200}
-						src={'https://placehold.co/200x200'}
+						src={'/images/react-folder-structure.png'}
 					/>,
 					<p key={3}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem

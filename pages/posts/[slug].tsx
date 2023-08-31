@@ -1,11 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
-import styles from './slug.module.css'; // Import your CSS module
+import styles from './slug.module.css';
 import { useRouter } from 'next/router';
 import { data } from '../../Content';
 import { ArticleItem } from '../../components';
 
-const FirstPost: React.FC = () => {
+const Slug: React.FC = () => {
 	const router = useRouter();
 	const d = data.find(
 		(e) => e.id === (router.query.slug ? +router.query.slug : null),
@@ -20,8 +20,8 @@ const FirstPost: React.FC = () => {
 					content='Understanding file structures in React applications.'
 				/>
 			</Head>
-			<header className={styles.header}>
-				<h1>{d?.title}</h1>
+			<header>
+				<h1 className={styles.header}>{d?.title}</h1>
 			</header>
 			<main>
 				{d?.content.map((e) => (
@@ -34,4 +34,4 @@ const FirstPost: React.FC = () => {
 	);
 };
 
-export default FirstPost;
+export default Slug;

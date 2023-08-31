@@ -18,3 +18,19 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 655px) {
+  .container {
+    width: 400px;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .container {
+    width: 300px;
+  }
+}

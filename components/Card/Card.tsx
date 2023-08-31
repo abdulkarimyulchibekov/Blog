@@ -12,10 +12,9 @@ interface IProps {
 
 export const Card = (props: IProps) => {
 	const { title, desc, image, id } = props;
-	console.log(image);
 
 	return (
-		<li className={`${styles.list__item} ${styles.card}`}>
+		<li className={styles.card}>
 			<Image
 				src={image?.props?.src}
 				width={image?.props?.width}
