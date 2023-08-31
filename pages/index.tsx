@@ -11,6 +11,9 @@ const BlogIndex: React.FC = () => {
 			<Head>
 				<title>Abdulkarim&apos;s blog</title>
 				<meta name='description' content="Abdulkarim's Blog" />
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1'></meta>
 				<link rel='icon' href='/favicon.ico' sizes='any' />
 			</Head>
 			<Header />
