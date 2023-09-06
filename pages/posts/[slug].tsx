@@ -3,7 +3,6 @@ import Head from 'next/head';
 import styles from './slug.module.css';
 import { useRouter } from 'next/router';
 import { data } from '../../Content';
-import { ArticleItem } from '../../components';
 
 const Slug: React.FC = () => {
 	const router = useRouter();
@@ -23,13 +22,7 @@ const Slug: React.FC = () => {
 			<header>
 				<h1 className={styles.header}>{d?.title}</h1>
 			</header>
-			<main>
-				{d?.content.map((e) => (
-					<ArticleItem subTitle={e.subTitle} key={e.subTitle}>
-						{e.children}
-					</ArticleItem>
-				))}
-			</main>
+			<main>{d?.content.map((e) => e)}</main>
 		</div>
 	);
 };
